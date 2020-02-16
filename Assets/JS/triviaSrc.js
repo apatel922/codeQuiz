@@ -58,15 +58,26 @@ var trivi1 = [
     },
     ///etc.
 ];
-console.log(trivi1.length);
-
-/// Timer based on trivia.length
-var timerStartLength = (trivi1.length++) * 12;
-console.log(timerStartLength);
+console.log(trivi1.length + " questions total.");
 
 
+/// Timer based on quiz length (10 sec per question)
+var timerStartLength = (trivi1.length++) * 10;
+console.log("10 seconds per question.");
+console.log("----------");
+console.log("We started at the bottom...");
 
-
-
-// var finalCountdown = setInterval(function() {
-// }, 1000);
+/// On page load, timer starts.
+window.addEventListener("load", function() {
+    var startTimer = setInterval(function() {
+        document.querySelector("#seconds").textContent = timerStartLength;
+        timerStartLength--;
+        /// Time's Up message
+        if (timerStartLength === 0) {
+            console.log("...Now we here.");
+            document.querySelector("#seconds").textContent = "Time's up!";
+            document.querySelector("#seconds").style.color = "#f08080";
+            clearInterval(startTimer);
+        }
+    }, 1000);
+});
