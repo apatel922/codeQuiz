@@ -1,0 +1,60 @@
+
+#hiScores {
+    color: rgb(102, 102, 102);
+}
+
+#navTrivi {
+    font-size: 32px;
+    color: rgb(102, 102, 102);
+}
+
+#navU {
+    color: rgb(223, 122, 122);
+}
+
+.display-4 {
+    color: rgb(102, 102, 102);
+}
+
+#bodyTrivi {
+    font-size: 32px;
+    color: rgb(102, 102, 102);
+    font-size: 3.5rem;
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+#bodyU {
+    color: rgb(223, 122, 122);
+    font-size: 3.5rem;
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+.btn-primary {
+    background-color: lightcoral;
+    border-color: rgb(216, 117, 117);
+}
+
+.btn-primary:hover {
+    background-color: rgb(216, 95, 95);
+    border-color: rgb(216, 95, 95);
+}
+
+.btn-primary:focus {
+    background-color: rgb(216, 95, 95);
+    border-color: rgb(216, 95, 95);
+}
+
+.jumbotron,
+h3 {
+    text-align: center;
+}
+
+.triviatron {
+    min-height: 350px;
+}
+
+.timer-secs {
+    display: inline-block;
+}

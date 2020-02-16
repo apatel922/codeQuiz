@@ -1,6 +1,6 @@
 
 /// Question List
-var triviaList = [
+var trivi1 = [
     { /// 0
         title: "How many bones does an adult human have?",
         choices: ["198", "206", "284", "302"],
@@ -57,4 +57,16 @@ var triviaList = [
         answer: "Little Women"
     },
     ///etc.
-  ];
+];
+console.log(trivi1.length);
+
+/// Timer based on trivia.length
+var timerStartLength = (trivi1.length++) * 12;
+console.log(timerStartLength);
+
+
+
+
+
+// var finalCountdown = setInterval(function() {
+// }, 1000);
