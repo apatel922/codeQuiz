@@ -1,0 +1,112 @@
+
+#hiScores {
+    color: rgb(102, 102, 102);
+}
+
+#navTrivi {
+    font-size: 32px;
+    color: rgb(102, 102, 102);
+}
+
+#navU {
+    color: rgb(223, 122, 122);
+}
+
+.display-4 {
+    color: rgb(102, 102, 102);
+}
+
+#bodyTrivi {
+    font-size: 32px;
+    color: #666666;
+    font-size: 3.5rem;
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+#bodyU {
+    color: rgb(223, 122, 122);
+    font-size: 3.5rem;
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+.btn-primary {
+    background-color: #f08080;
+    border-color: rgb(216, 117, 117);
+}
+
+.btn-primary:hover {
+    background-color: rgb(216, 95, 95);
+    border-color: rgb(216, 95, 95);
+}
+
+.btn-primary:focus {
+    background-color: rgb(216, 95, 95);
+    border-color: rgb(216, 95, 95);
+}
+
+.jumbotron, 
+h3 {
+    text-align: center;
+}
+
+
+h3 {
+    color: #666666;
+}
+
+.triviatron {
+    min-height: 350px;
+}
+
+.lead {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.lead.choice:hover {
+    color: #771d1d;
+    background-color: #f0808041;
+    border-radius: 10px;
+    transition: all .1s linear;
+    height: 100%;
+    width: 100%;
+}
+
+.progress {
+    border-radius: 0%;
+}
+
+.progress-bar {
+    background-color: lightcoral;
+}
+
+#seconds {
+    color:#f08080;
+    font-size: 40px;
+}
+
+#trivQuestion,
+#a0,
+#a1,
+#a2,
+#a3 {
+    text-align: center;
+}
+
+@media only screen and (max-width: 900px) {
+    #trivQuestion,
+    #a0,
+    #a1,
+    #a2,
+    #a3 {
+        text-align: left;
+        padding-left: 40px;
+    }
+
+    #seconds {
+        text-align: left;
+        
+    }
+}

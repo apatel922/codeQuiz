@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Logo & High Scores -->
+    <nav class="navbar navbar-light bg-light">
+        <span id="navTrivi" class="navbar-brand mb-0 h1">trivi<span id="navU">U</span></span>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a id="hiScores" class="nav-link">View High Scores</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- centered Welcome block -->
+    <div class="jumbotron triviatron">
+        <h3 id="trivQuestion">Question</h3>
+        <hr>
+        <p id="a0" class="lead choice">lorem</p>
+        <p id="a1" class="lead choice">lorem</p>
+        <p id="a2" class="lead choice">lorem</p>
+        <p id="a3" class="lead choice">lorem</p>
+        <hr>
+    </div>
+    <footer class="fixed-bottom">
+        <!-- Timer -->
+        <div class="container">
+            <span id="timerContainer">
+                <h3 id="seconds" class="timer display-4">Go!</h3>
+                <!-- Icon created here from DOM -->
+            </span>
+        </div>
+        <div class="progress">
+            <div id="progBar" class="progress-bar" role="progressbar" style="width: ;" aria-valuenow="10" aria-valuemin="0" aria-valuemax=""></div>
+        </div>
+    </footer>
+
+
+
+    <script src="JS/triviaSrc.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
