@@ -64,6 +64,23 @@ h3 {
     padding-bottom: 8px;
 }
 
+.lead.choice:hover {
+    color: #771d1d;
+    background-color: #f0808041;
+    border-radius: 10px;
+    transition: all .1s linear;
+    height: 100%;
+    width: 100%;
+}
+
+.progress {
+    border-radius: 0%;
+}
+
+.progress-bar {
+    background-color: lightcoral;
+}
+
 #seconds {
     color:#f08080;
     font-size: 40px;
