@@ -46,10 +46,11 @@
     border-color: rgb(216, 95, 95);
 }
 
-.jumbotron,
+.jumbotron, 
 h3 {
     text-align: center;
 }
+
 
 h3 {
     color: #666666;
@@ -84,4 +85,28 @@ h3 {
 #seconds {
     color:#f08080;
     font-size: 40px;
+}
+
+#trivQuestion,
+#a0,
+#a1,
+#a2,
+#a3 {
+    text-align: center;
+}
+
+@media only screen and (max-width: 900px) {
+    #trivQuestion,
+    #a0,
+    #a1,
+    #a2,
+    #a3 {
+        text-align: left;
+        padding-left: 40px;
+    }
+
+    #seconds {
+        text-align: left;
+        
+    }
 }
