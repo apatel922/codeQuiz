@@ -1,5 +1,5 @@
 
-/// Question List
+// Question List
 var trivi1 = [
     { /// 0
         title: "How many bones does an adult human have?",
@@ -60,24 +60,46 @@ var trivi1 = [
 ];
 console.log(trivi1.length + " questions total.");
 
-
-/// Timer based on quiz length (10 sec per question)
+// Timer based on quiz length (10 sec per question)
 var timerStartLength = (trivi1.length++) * 10;
 console.log("10 seconds per question.");
 console.log("----------");
 console.log("We started at the bottom...");
 
-/// On page load, timer starts.
-window.addEventListener("load", function() {
-    var startTimer = setInterval(function() {
-        document.querySelector("#seconds").textContent = timerStartLength;
-        timerStartLength--;
-        /// Time's Up message
-        if (timerStartLength === 0) {
-            console.log("...Now we here.");
-            document.querySelector("#seconds").textContent = "Time's up!";
-            document.querySelector("#seconds").style.color = "#f08080";
-            clearInterval(startTimer);
-        }
-    }, 1000);
-});
+// Timer fxn
+var startTimer = setInterval(function() {
+    document.querySelector("#seconds").textContent = timerStartLength;
+    document.querySelector("#seconds").style.color = "#aaaaaa";
+    timerStartLength--;
+    // "Time's Up!" message
+    if (timerStartLength < 0) {
+        console.log("...Now we here.");
+        document.querySelector("#seconds").textContent = "Time's up!";
+        document.querySelector("#seconds").style.color = "#f08080";
+        clearInterval(startTimer);
+    }
+}, 1000);
+
+// Generate Questions fxn
+
+function generateQuiz() {
+    for (var i = 0; i < trivi1.length; i++) {
+    // CONTENT CREATED
+        // Create the Question (h3)
+        // Create the Choices (p)
+
+    // USER MAKES SELECTION
+        // HAPPY PATH (User makes CORRECT choice) --------
+        // System displays "Correct" message
+        // Response is saved to local storage or in array
+        
+
+        // IF UNHAPPY PATH (User makes INCORRECT choice) --------
+        // System displays "Incorrect" message
+        // 5 seconds are lost from Timer
+        // Response is saved to local storage or in array
+
+    // CONTINUE LOOP (show next question)
+
+    };
+};

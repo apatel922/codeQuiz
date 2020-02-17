@@ -18,7 +18,7 @@
 
 #bodyTrivi {
     font-size: 32px;
-    color: rgb(102, 102, 102);
+    color: #666666;
     font-size: 3.5rem;
     font-weight: normal;
     line-height: 1.2;
@@ -32,7 +32,7 @@
 }
 
 .btn-primary {
-    background-color: lightcoral;
+    background-color: #f08080;
     border-color: rgb(216, 117, 117);
 }
 
@@ -51,10 +51,20 @@ h3 {
     text-align: center;
 }
 
+h3 {
+    color: #666666;
+}
+
 .triviatron {
     min-height: 350px;
 }
 
+.lead {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
 #seconds {
-    color:#cccccc;
+    color:#f08080;
+    font-size: 40px;
 }
