@@ -58,10 +58,22 @@ var trivi1 = [
     },
     ///etc.
 ];
-console.log(trivi1.length + " questions total.");
+
+// Setting up Globals
+var trivQuestion = document.querySelector("#trivQuestion");
+var a0 = document.querySelector("#a0");
+var a1 = document.querySelector("#a1");
+var a2 = document.querySelector("#a2");
+var a3 = document.querySelector("#a3");
+var seconds = document.querySelector("#seconds");
+// Confirming Globals
+console.log(trivQuestion, a0, a1, a2, a3, seconds);
+
+
 
 // Timer based on quiz length (10 sec per question)
-var timerStartLength = (trivi1.length++) * 10;
+var timerStartLength = (trivi1.length) * 10;
+console.log(trivi1.length + " questions total.");
 console.log("10 seconds per question.");
 console.log("----------");
 console.log("We started at the bottom...");
@@ -80,26 +92,12 @@ var startTimer = setInterval(function() {
     }
 }, 1000);
 
+
+var prevQIndex = trivi1.length - 1;
+var loopingQIndex = 0;
+
 // Generate Questions fxn
+function generateQandAs () {
+    var x = trivi1[loopingQIndex];
 
-function generateQuiz() {
-    for (var i = 0; i < trivi1.length; i++) {
-    // CONTENT CREATED
-        // Create the Question (h3)
-        // Create the Choices (p)
-
-    // USER MAKES SELECTION
-        // HAPPY PATH (User makes CORRECT choice) --------
-        // System displays "Correct" message
-        // Response is saved to local storage or in array
-        
-
-        // IF UNHAPPY PATH (User makes INCORRECT choice) --------
-        // System displays "Incorrect" message
-        // 5 seconds are lost from Timer
-        // Response is saved to local storage or in array
-
-    // CONTINUE LOOP (show next question)
-
-    };
 };
