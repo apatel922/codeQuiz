@@ -59,7 +59,7 @@ var questions = [
 
 * Functional, deployed application.
 
-* GitHub repository with README describing project.
+* GitHub repository with README describing project. 
 
 * The first view of the application displays a button that starts the quiz.
 
