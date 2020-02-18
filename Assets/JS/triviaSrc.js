@@ -86,7 +86,6 @@ var startTimer = setInterval(function() {
     if (timerStartLength < 0) {
         console.log("...Now we here.");
         document.querySelector("#seconds").textContent = "Time's up!";
-        document.querySelector("#seconds").style.color = "#f08080";
         clearInterval(startTimer);
     }
 }, 1000);
@@ -101,10 +100,10 @@ function update() {
       
     function countUp() { 
         if (width >= 100) { 
-            clearInterval(identity); 
+            clearInterval(identity);
         } else { 
             width++;  
-            pbar.style.width = width + '%';  
+            pbar.style.width = width + '%';
         }; 
     }; 
 }; 
@@ -117,7 +116,7 @@ update();
 var prevQIndex = trivi1.length - 1;
 var loopingQIndex = 0;
 
-// Generate Questions fxn
+// Generate Questions and set of Answers fxn
 function generateQnA () {
     var questNum = trivi1[loopingQIndex];
     triviUQuest.textContent = questNum.title[0];
