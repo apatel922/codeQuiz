@@ -95,30 +95,33 @@ console.log(timerStartLength);
 
 // Progress Bar fxn
 function update() { 
-    var width = 0; 
-    var identity = setInterval(countUp, (timerStartLength * 10)); 
+    var barWidth = 0; 
+    var increaseRate = setInterval(countUp, (timerStartLength * 10)); 
       
     function countUp() { 
-        if (width >= 100) { 
-            clearInterval(identity);
+        if (barWidth >= 100) { 
+            clearInterval(increaseRate);
         } else { 
-            width++;  
-            pbar.style.width = width + '%';
+            barWidth++;  
+            pbar.style.width = barWidth + '%';
         }; 
     }; 
 }; 
 
-// Progress Bar runs onLoad
+// On LOAD... Gen progress bar
 update();
 
 
 
 var prevQIndex = trivi1.length - 1;
-var loopingQIndex = 0;
+var currentQuestion = 0;
+
+var clickQ = document.querySelector(".nextQ");
+console.log(clickQ);
 
 // Generate Questions and set of Answers fxn
 function generateQnA () {
-    var questNum = trivi1[loopingQIndex];
+    var questNum = trivi1[currentQuestion];
     triviUQuest.textContent = questNum.title[0];
     answer0.textContent = questNum.choices[0];
     answer1.textContent = questNum.choices[1];
@@ -126,9 +129,36 @@ function generateQnA () {
     answer3.textContent = questNum.choices[3];
 };
 
-console.log(generateQnA);
+// On LOAD... Gen questions + answers
 generateQnA();
 
 
+// On CLICK... Validate response
+function checkResponse() {
+    var questNum = trivi1[currentQuestion];
+    // IF choice matches answer... Return CORRECT
+    if (clickQ.textContent == questNum.answer) {
+        console.log(clickQ.textContent);
+        console.log(questNum.answer);
 
+    // ELSE... Return INCORRECT
+    } else {
+        console.log("WRONG");
+    };
+};
 
+// On CLICK... Display next
+function displayNext() {
+    currentQuestion++;
+    console.log("# " + currentQuestion);
+    generateQnA();
+};
+
+// function displayNext () {
+//     for (var i = 0; i < trivi1.length; i++) {
+//         currentQuestion++;
+//         console.log("# " + currentQuestion);
+//         generateQnA();
+//     };
+//     // after loop... go to High shore pg
+// };
